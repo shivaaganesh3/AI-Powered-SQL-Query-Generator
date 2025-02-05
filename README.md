@@ -22,11 +22,15 @@ Setup Instructions
 Clone the repository:
 
 git clone https://github.com/shivaaganesh3/EquityLens.git
+
 cd EquityLens
+
 Create and activate a virtual environment:
 
 python -m venv venv
+
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
 Install the required packages:
 
 pip install -r requirements.txt
