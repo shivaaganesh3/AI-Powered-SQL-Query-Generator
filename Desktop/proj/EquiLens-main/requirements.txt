@@ -1,0 +1,6 @@
+unstructured==0.15.10
+tiktoken==0.7.0
+libmagic==1.0
+python-magic==0.4.27
+python-magic-bin==0.4.14
+langchain-google-genai==1.0.10
