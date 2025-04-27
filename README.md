@@ -1,67 +1,63 @@
-EquityLens - AI Powered Equity Research Tool
-EquityLens is an AI-powered tool designed to assist in equity research by analyzing news articles and providing insightful answers to user queries. The tool leverages advanced language models and vector databases to deliver accurate and relevant information.
+# 🚀 AI-Powered SQL Query Generator
 
-Table of Contents
-Overview
-Features
-Setup Instructions
-Usage
-Screenshots
-Requirements
-Contributing
-Overview
-EquityLens uses Streamlit for the user interface, FAISS for vector storage, and Google's Generative AI for embeddings and language models. The tool processes URLs of news articles, splits the text into manageable chunks, generates embeddings, and stores them in a FAISS index. Users can then query the tool to retrieve relevant information from the indexed articles.
+An AI-driven tool that converts **natural language queries into optimized SQL queries** and executes them in a MySQL database.  
+Built with **FastAPI**, **Streamlit**, **LangChain**, and **Google Gemini**.
 
-Features
-Load and analyze news articles from URLs
-Split text into chunks for efficient processing
-Generate embeddings using Google's Generative AI
-Store and retrieve embeddings using FAISS
-Interactive user interface with Streamlit
-Setup Instructions
-Clone the repository:
+---
 
-git clone https://github.com/shivaaganesh3/EquityLens.git
+## 📌 Features
+✅ Convert **natural language to SQL** using OpenAI (GPT-4)  
+✅ **Execute SQL queries** in a MySQL database  
+✅ **Query validation** & **indexing suggestions** for optimization  
+✅ Interactive **web UI with Streamlit**  
+✅ **FastAPI backend** with REST API support  
 
-cd EquityLens
+---
 
-Create and activate a virtual environment:
+## 🛠️ Tech Stack
+- **Backend:** FastAPI, SQLAlchemy, GoogleGemini
+- **Frontend:** Streamlit
+- **Database:** MySQL
+- **AI Model:** Google Gemini
+- **Deployment:** Uvicorn (for FastAPI), Streamlit Cloud (for UI)
+
+---
+
+## 🚀 Setup & Installation
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/<your-github-username>/AI-Powered-SQL-Query-Generator.git
+cd AI-Powered-SQL-Query-Generator
+
+
+##  Create a Virtual Environment & Install Dependencie
 
 python -m venv venv
-
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-Install the required packages:
-
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
 pip install -r requirements.txt
-Set up environment variables:
 
-Create a [.env] file in the root directory and add your Google API key:
-google_api_key='YOUR_GOOGLE_API_KEY'
-Usage
-Run the Streamlit application:
+##  Set Up Environment Variables
 
-streamlit run main.py
-Interact with the application:
+Create a .env file in the project root and add:
 
-Enter the URLs of news articles in the sidebar.
-Click the "Analyze" button to process the articles.
-Enter your query in the text input box to retrieve relevant information.
-Screenshots
-Architecture Diagram
-Architecture Diagram
+# MySQL Database Config
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_PASSWORD=my_password
+MYSQL_DATABASE=test_db
+MYSQL_PORT=3306
 
-Main Interface
-Main Interface
+# OpenAI API Key
+OPENAI_API_KEY=your_openai_api_key
 
-Analysis in Progress
-Analysis in Progress
 
-Query Results
-Query Results
+🏗️ Running the Application
+1️⃣ Start FastAPI Backend
 
-Requirements
-Python 3.7 or higher
-See [requirements.txt] for a full list of dependencies
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+uvicorn app:app --reload
+
+2️⃣ Start Streamlit UI
+
+streamlit run ui.py
