@@ -1,7 +1,7 @@
 # 🚀 AI-Powered SQL Query Generator
 
 An AI-driven tool that converts **natural language queries into optimized SQL queries** and executes them in a MySQL database.  
-Built with **FastAPI**, **Streamlit**, **LangChain**, and **OpenAI's GPT-4**.
+Built with **FastAPI**, **Streamlit**, **LangChain**, and **Google Gemini**.
 
 ---
 
@@ -15,10 +15,10 @@ Built with **FastAPI**, **Streamlit**, **LangChain**, and **OpenAI's GPT-4**.
 ---
 
 ## 🛠️ Tech Stack
-- **Backend:** FastAPI, SQLAlchemy, OpenAI API
+- **Backend:** FastAPI, SQLAlchemy, GoogleGemini
 - **Frontend:** Streamlit
 - **Database:** MySQL
-- **AI Model:** GPT-4 (via OpenAI API)
+- **AI Model:** Google Gemini
 - **Deployment:** Uvicorn (for FastAPI), Streamlit Cloud (for UI)
 
 ---
