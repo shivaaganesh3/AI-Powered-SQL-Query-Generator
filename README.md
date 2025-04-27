@@ -6,7 +6,7 @@ Built with **FastAPI**, **Streamlit**, **LangChain**, and **Google Gemini**.
 ---
 
 ## 📌 Features
-✅ Convert **natural language to SQL** using OpenAI (GPT-4)  
+✅ Convert **natural language to SQL** using Gemini 
 ✅ **Execute SQL queries** in a MySQL database  
 ✅ **Query validation** & **indexing suggestions** for optimization  
 ✅ Interactive **web UI with Streamlit**  
