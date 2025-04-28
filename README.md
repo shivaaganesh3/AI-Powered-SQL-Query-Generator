@@ -50,7 +50,7 @@ MYSQL_DATABASE=test_db
 MYSQL_PORT=3306
 
 # OpenAI API Key
-OPENAI_API_KEY=your_openai_api_key
+gemini.api_ke=your_gemini_api_key
 
 
 🏗️ Running the Application
